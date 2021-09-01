@@ -86,8 +86,46 @@ body {
           font-size: 19px;
           color: #666;
         }
+        .app__header-subleftList {
+          display: none;
+          list-style: none;
+        }
         @include Responsive(SM) {
           display: block;
+          i {
+            position: relative;
+          }
+          .app__header-subleftList.d-none {
+            display: none;
+          }
+          .app__header-subleftList {
+            display: block;
+            position: absolute;
+            top: 6%;
+            left: 21px;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            box-shadow: 0px 7px 17px 0px black;
+            border-radius: 5px;
+            width: 90%;
+            text-align: center;
+            z-index: 1;
+            &__item {
+              font-size: 20px;
+              padding: 13px 0;
+              &:hover {
+                background-color: $primary-color;
+                &-link {
+                  color: white;
+                }
+              }
+              &-link {
+                color: black;
+                text-decoration: none;
+              }
+            }
+          }
         }
       }
       &-center {

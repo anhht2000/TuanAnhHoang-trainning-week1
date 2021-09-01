@@ -57,9 +57,47 @@ body .app__container .app__header-subleft i {
   font-size: 19px;
   color: #666;
 }
+body .app__container .app__header-subleft .app__header-subleftList {
+  display: none;
+  list-style: none;
+}
 @media only screen and (max-width: 810px) {
   body .app__container .app__header-subleft {
     display: block;
+  }
+  body .app__container .app__header-subleft i {
+    position: relative;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList.d-none {
+    display: none;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList {
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: 21px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0px 7px 17px 0px black;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    z-index: 1;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item {
+    font-size: 20px;
+    padding: 13px 0;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item:hover {
+    background-color: #42659d;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item:hover-link {
+    color: white;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item-link {
+    color: black;
+    text-decoration: none;
   }
 }
 body .app__container .app__header-center {
