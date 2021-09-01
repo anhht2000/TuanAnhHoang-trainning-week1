@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app__container">
+      <header class="app__header">
+        <ul class="app__header-left">
+          <li class="app__header-left__item">
+            <a href="/" class="app__header-left__item-link">Trang chủ</a>
+          </li>
+          <li class="app__header-left__item">
+            <a href="/" class="app__header-left__item-link">Sản phẩm</a>
+          </li>
+          <li class="app__header-left__item">
+            <a href="/" class="app__header-left__item-link">Phụ kiện</a>
+          </li>
+          <li class="app__header-left__item">
+            <a href="/" class="app__header-left__item-link">Liên hệ</a>
+          </li>
+        </ul>
+        <div class="app__header-subleft">
+          <i class="fas fa-bars"></i>
+          <!-- <ul class="app__header-subleftList">
+            <li class="app__header-subleft__item">
+              <a href="/" class="app__header-subleft__item-link">Trang chủ</a>
+            </li>
+            <li class="app__header-subleft__item">
+              <a href="/" class="app__header-subleft__item-link">Sản phẩm</a>
+            </li>
+            <li class="app__header-subleft__item">
+              <a href="/" class="app__header-subleft__item-link">Phụ kiện</a>
+            </li>
+            <li class="app__header-subleft__item">
+              <a href="/" class="app__header-subleft__item-link">Liên hệ</a>
+            </li>
+          </ul> -->
+        </div>
+        <div class="app__header-center">
+          <img src="./images/Logo-2.png" alt="" class="app__header-center-img" />
+        </div>
+        <ul class="app__header-right">
+          <li class="app__header-right-item">
+            <i class="fas fa-search app__header-right-item-icon"></i>
+          </li>
+          <li class="app__header-right-item">
+            <i class="fas fa-shopping-bag app__header-right-item-icon"></i>
+          </li>
+          <li class="app__header-right-item">
+            <i class="fas fa-user app__header-right-item-icon"></i>
+          </li>
+        </ul>
+        <div class="app__header-subright">
+          <i class="fas fa-search app__header-right-item-icon"></i>
+        </div>
+      </header>
+      <!-- slider -->
+      <div class="slider">
+        <div class="slider__left">
+          <h2 class="slider__left-title">Polo nữ Pima cao cấp</h2>
+          <p class="slider__left-text">
+            Nhắc đến sự đăng cấp không thể không nhắc đến dòng vài pima Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Adipisci aut sequi nam eum odio dolorum molestiae eius
+            possimus, animi repellat? Rem sunt quisquam dolores quae quis debitis illum enim sed?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus rem unde
+            deleniti.
+          </p>
+          <div class="slider__left-detail">
+            <a href="" class="slider__left-detail-link">Xem chi tiết</a>
+          </div>
+          <div class="slider__left-pagination">
+            <span class="slider__left-pagination-prev">
+              <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="slider__left-pagination-center">1/3</span>
+            <span class="slider__left-pagination-next">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+        <div class="slider__right">
+          <div class="slider__right-eslip"></div>
+          <img src="./images/slider/slide_1.png" alt="" class="slider__right-img" />
+        </div>
+      </div>
+      <!-- service  -->
+      <div class="service">
+        <ul class="service__container">
+          <li class="service__container-item">
+            <i class="fas fa-shopping-bag service__container-item-icon"></i>
+            <div class="service__container-item-info">
+              <p class="service__container-item-info__title">Miễn phí giao hàng</p>
+              <p class="service__container-item-info__subtitle">Miễn phí ship với đơn hàng > 239k</p>
+            </div>
+            <li class="service__container-item">
+              <i class="fas fa-id-card service__container-item-icon"></i>
+              <div class="service__container-item-info">
+                <p class="service__container-item-info__title">Thanh toán COD</p>
+                <p class="service__container-item-info__subtitle">Thanh toán khi nhận hàng (COD)</p>
+              </div>
+            </li>
+            <li class="service__container-item">
+              <i class="fas fa-gem service__container-item-icon"></i>
+              <div class="service__container-item-info">
+                <p class="service__container-item-info__title">Khách hàng VIP</p>
+                <p class="service__container-item-info__subtitle">Ưu đãi dành cho khách hàng VIP</p>
+              </div>
+            </li>
+            <li class="service__container-item">
+              <i class="fas fa-hand-holding-heart service__container-item-icon"></i>
+              <div class="service__container-item-info">
+                <p class="service__container-item-info__title">Hỗ trợ bảo hành</p>
+                <p class="service__container-item-info__subtitle">Đổi sửa đồ tại tất cả các store</p>
+              </div>
+            </li>
+          </li>
+        </ul>
+      </div>
+      <!-- top product -->
+      <div class="product">
+        <h3 class="product__title">
+          top sản phẩm bán chạy trong tuần
+        </h3>
+        <ul class="product__list">
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-12.jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Quần jean 12</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-01\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Dinosaur 12</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-02\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Dinosaur 13</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-03\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Dinosaur 14</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- new product -->
+      <div class="product">
+        <h3 class="product__title">
+          sản phẩm mới
+        </h3>
+        <ul class="product__list">
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-07\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo somi caro 07</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-08\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo somi caro 08</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-09\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo somi dài tay 09</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-10\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Quần jean phong cách 10</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-11\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Quần jean 11</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-12.jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Quần jean 12</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-01\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo Dinosaur 13</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-02\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo Dinosaur 14</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- banner -->
+      <div class="banner"></div>
+      <!-- population product  -->
+      <div class="product">
+        <h3 class="product__title">
+          phổ biến
+        </h3>
+        <ul class="product__list">
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-03\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Dinosaur 03</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-04\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Polo 04</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-05\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Polo 05</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-06\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Polo 06</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-07\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo somi caro 07</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-08\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo somi dài tay 08</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-06\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo somi dài tay 09</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-10\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Quần jean phong cách 10</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-11\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Quần jean 11</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-12.jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Quần jean 12</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-01\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Dinosaur 13</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+          <li class="product__list__item">
+            <div class="product__list__item-img" style="background: url('./images/products/product-02\ \(1\).jpg') center center/cover no-repeat;"></div>
+            <div class="product__list__item-info">
+              <p class="product__list__item-info-name">Áo thun Dinosaur 13</p>
+              <div class="product__list__item-info-price">
+                <p class="product__list__item-info-price-new">194.000</p>
+                <p class="product__list__item-info-price-old">399.000</p>
+              </div>
+              <a href="" class="product__list__item-info-button">Chọn Mua</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <footer class="app__footer">
+        <div class="app__footer-content">
+          <p class="app__footer-content__title">Tổng đài hỗ trợ</p>
+          <p class="app__footer-content__text">Liên hệ đặt hàng 023456789</p>
+          <p class="app__footer-content__text">Thắc mắc đơn hàng 023456789</p>
+          <p class="app__footer-content__text">Góp ý khiếu nại</p>
+        </div>
+        <div class="app__footer-content">
+          <p class="app__footer-content__title">Về YOLO</p>
+          <p class="app__footer-content__text">Giới thiệu</p>
+          <p class="app__footer-content__text">Liên hệ</p>
+          <p class="app__footer-content__text">Tuyển dụng</p>
+          <p class="app__footer-content__text">Tin tức</p>
+          <p class="app__footer-content__text">Hệ thống cửa hàng</p>
+        </div>
+        <div class="app__footer-content">
+          <p class="app__footer-content__title">Chăm sóc khách hàng</p>
+          <p class="app__footer-content__text">Chính sách đổi trả</p>
+          <p class="app__footer-content__text">Chính sách bảo hành</p>
+          <p class="app__footer-content__text">Chính sách hoàn tiền</p>
+        </div>
+        <div class="app__footer-content">
+          <img src="./images//Logo-2.png" alt="" class="app__footer-content-img"/>
+          <p class="app__footer-content__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quisquam laboriosam vel odio quam deserunt iure? Cupiditate, fugiat possimus ea est blanditiis .
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

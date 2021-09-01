@@ -1,0 +1,366 @@
+// Khai báo kích thước tương ứng với màn hình thiết bị
+
+$XS: 480px;
+$SM: 810px;
+$MD: 1024px;
+$XL: 1170px;
+
+// media queries
+
+@mixin Responsive($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      // <480
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (max-width: $SM) {
+      // 480<x<768
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (max-width: $MD) {
+      //768<x<1024
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (max-width: $XL) {
+      //1024<<1170
+      @content;
+    }
+  }
+}
+
+$text-color: #252525;
+$primary-color: #42659d;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  .app__container {
+    width: 1025px;
+    margin: 0 auto;
+    max-width: 100%;
+    //header
+    .app__header {
+      display: flex;
+      align-items: center;
+      @include Responsive(SM) {
+        height: 50px;
+      }
+      &-left {
+        width: 55%;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &__item {
+          margin-right: 27px;
+          &-link {
+            text-decoration: none;
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        &__item:first-child a {
+          color: $primary-color;
+        }
+        &__item:hover a {
+          color: $primary-color;
+        }
+        @include Responsive(SM) {
+          display: none;
+        }
+      }
+      &-subleft {
+        display: none;
+        width: 55%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        i {
+          cursor: pointer;
+          padding-left: 21px;
+          font-size: 19px;
+          color: #666;
+        }
+        @include Responsive(SM) {
+          display: block;
+        }
+      }
+      &-center {
+        width: 35%;
+        &-img {
+          height: 25px;
+        }
+      }
+      &-subright {
+        display: none;
+        width: 100%;
+        list-style: none;
+        justify-content: flex-end;
+        @include Responsive(SM) {
+          display: flex;
+          padding-right: 20px;
+        }
+      }
+      &-right {
+        width: 20%;
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        @include Responsive(SM) {
+          display: none;
+        }
+        &-item {
+          padding-left: 20px;
+          &-icon {
+            cursor: pointer;
+            font-size: 22px;
+            color: #161515ad;
+          }
+          &:hover i {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    //slider
+    .slider {
+      margin-bottom: 80px;
+      display: flex;
+      @include Responsive(SM) {
+        display: none;
+      }
+      &__left {
+        padding-top: 50px;
+        width: 65%;
+        &-title {
+          font-size: 37px;
+          letter-spacing: 1px;
+          margin: 0;
+          color: $primary-color;
+        }
+        &-text {
+          margin: 0;
+          padding: 50px 61px 0 0;
+          font-size: 15px;
+          line-height: 23px;
+          color: #999;
+          font-weight: 400;
+        }
+        &-detail {
+          padding-top: 50px;
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 400;
+            padding: 9px 12px;
+            background-color: $primary-color;
+            color: white;
+          }
+        }
+        &-pagination {
+          padding-top: 55px;
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 92px;
+          font-size: 14px;
+          &-prev {
+            cursor: pointer;
+          }
+          &-center {
+            padding: 0 9px;
+          }
+          &-next {
+            cursor: pointer;
+          }
+        }
+      }
+      &__right {
+        width: 35%;
+        position: relative;
+        &-eslip {
+          content: "";
+          position: absolute;
+          top: 32px;
+          right: 3%;
+          width: 350px;
+          height: 300px;
+          background: #42659d;
+          border-radius: 199px 273px 224px 298px;
+        }
+        img {
+          position: absolute;
+          top: -75px;
+          right: 0;
+          height: 500px;
+        }
+      }
+    }
+    //service
+    .service {
+      padding-bottom: 75px;
+      &__container {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 10px;
+
+        &-item {
+          width: 24%;
+          display: flex;
+          align-items: center;
+
+          @include Responsive(SM) {
+            width: 49%;
+            margin-top: 20px;
+            justify-content: center;
+          }
+          @include Responsive(XS) {
+            width: 99%;
+            margin-top: 20px;
+            justify-content: center;
+          }
+          &-icon {
+            color: $primary-color;
+            font-size: 28px;
+          }
+          &-info {
+            padding-left: 23px;
+            &__title {
+              margin: 0;
+              font-weight: 500;
+              font-size: 16px;
+            }
+            &__subtitle {
+              margin: 0;
+              font-size: 13px;
+              padding-top: 10px;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+    //product
+    .product {
+      width: 940px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding-bottom: 75px;
+      &__title {
+        margin: 0;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 23px;
+        font-weight: 500;
+        padding-bottom: 60px;
+      }
+      &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__item {
+          padding-bottom: 40px;
+          width: 24%;
+          text-align: center;
+          @include Responsive(SM) {
+            width: 49%;
+          }
+          @include Responsive(XS) {
+            width: 99%;
+          }
+          &-img {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 100%;
+          }
+          &-info {
+            margin-top: 30px;
+            &-name {
+              margin: 0;
+              font-size: 14px;
+              color: #666;
+            }
+            &-price {
+              padding: 10px 0;
+              display: flex;
+              justify-content: center;
+              &-new {
+                margin: 0;
+                font-weight: 700;
+                padding-right: 14px;
+              }
+              &-old {
+                margin: 0;
+                text-decoration: line-through;
+                color: #999;
+              }
+            }
+            &-button {
+              text-decoration: none;
+              background-color: #42659d;
+              color: white;
+              text-transform: uppercase;
+              font-size: 14px;
+              padding: 7px 15px;
+            }
+          }
+        }
+      }
+    }
+    //banner
+    .banner {
+      padding-top: 30%;
+      margin-bottom: 75px;
+      background: url("../images/banner.png") center center/cover no-repeat;
+      @include Responsive(XS) {
+        display: none;
+      }
+    }
+    //footer
+    .app__footer {
+      display: flex;
+      flex-wrap: wrap;
+      &-content {
+        width: 25%;
+        @include Responsive(SM) {
+          width: 50%;
+          text-align: center;
+        }
+        @include Responsive(XS) {
+          width: 100%;
+          text-align: center;
+        }
+        &__title {
+          margin: 0;
+          padding-bottom: 20px;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+        // &__text1 {
+        //   margin: 0;
+        // }
+        &__text {
+          margin: 0;
+          padding-bottom: 10px;
+          font-size: 14px;
+        }
+        &-img {
+          padding-bottom: 20px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
