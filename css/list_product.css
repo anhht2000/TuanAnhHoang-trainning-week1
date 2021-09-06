@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body .app__container {
+  width: 1025px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+body .app__container .app__header {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__header {
+    height: 50px;
+  }
+}
+body .app__container .app__header-left {
+  width: 55%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body .app__container .app__header-left__item {
+  margin-right: 27px;
+}
+body .app__container .app__header-left__item-link {
+  text-decoration: none;
+  color: #252525;
+  font-size: 16px;
+  font-weight: 500;
+}
+body .app__container .app__header-left__item:first-child a {
+  color: #42659d;
+}
+body .app__container .app__header-left__item:hover a {
+  color: #42659d;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__header-left {
+    display: none;
+  }
+}
+body .app__container .app__header-subleft {
+  display: none;
+  width: 55%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body .app__container .app__header-subleft i {
+  cursor: pointer;
+  padding-left: 21px;
+  font-size: 19px;
+  color: #666;
+}
+body .app__container .app__header-subleft .app__header-subleftList {
+  display: none;
+  list-style: none;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__header-subleft {
+    display: block;
+  }
+  body .app__container .app__header-subleft i {
+    position: relative;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList.d-none {
+    display: none;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList {
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: 21px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0px 7px 17px 0px black;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    z-index: 1;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item {
+    font-size: 20px;
+    padding: 13px 0;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item:hover {
+    background-color: #42659d;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item:hover-link {
+    color: white;
+  }
+  body .app__container .app__header-subleft .app__header-subleftList__item-link {
+    color: black;
+    text-decoration: none;
+  }
+}
+body .app__container .app__header-center {
+  width: 35%;
+}
+body .app__container .app__header-center-img {
+  height: 25px;
+}
+body .app__container .app__header-subright {
+  display: none;
+  width: 100%;
+  list-style: none;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__header-subright {
+    display: flex;
+    padding-right: 20px;
+  }
+}
+body .app__container .app__header-right {
+  width: 20%;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__header-right {
+    display: none;
+  }
+}
+body .app__container .app__header-right-item {
+  padding-left: 20px;
+}
+body .app__container .app__header-right-item-icon {
+  cursor: pointer;
+  font-size: 22px;
+  color: #252525;
+}
+body .app__container .app__header-right-item:hover i {
+  color: #42659d;
+}
+body .app__container .app__main {
+  display: flex;
+  padding-top: 45px;
+  flex-wrap: wrap;
+}
+body .app__container .app__main__left {
+  width: 25%;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__main__left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .app__container .app__main__left {
+    display: none;
+  }
+}
+body .app__container .app__main__left-link {
+  text-decoration: none;
+  background-color: #42659d;
+  color: white;
+  margin: 5px 0 0 10px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__main__left-link {
+    height: 20px;
+  }
+}
+body .app__container .app__main__left-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body .app__container .app__main__left-list:nth-of-type(2), body .app__container .app__main__left-list:nth-of-type(3) {
+  padding-top: 15px;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__main__left-list:nth-of-type(2), body .app__container .app__main__left-list:nth-of-type(3) {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__main__left-list {
+    text-align: start;
+  }
+}
+body .app__container .app__main__left-list__title {
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 17px;
+}
+body .app__container .app__main__left-list__item {
+  color: #666;
+  padding-bottom: 10px;
+}
+body .app__container .app__main__left-list__item label {
+  font-size: 14px;
+}
+body .app__container .app__main__right {
+  width: 75%;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__main__right {
+    width: 100%;
+  }
+}
+body .app__container .app__main__right .product__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .app__container .app__main__right .product__list__item {
+  padding-bottom: 40px;
+  width: 33%;
+  text-align: center;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__main__right .product__list__item {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .app__container .app__main__right .product__list__item {
+    width: 99%;
+  }
+}
+body .app__container .app__main__right .product__list__item-img {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100%;
+}
+body .app__container .app__main__right .product__list__item-info {
+  margin-top: 30px;
+}
+body .app__container .app__main__right .product__list__item-info-name {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+body .app__container .app__main__right .product__list__item-info-price {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+body .app__container .app__main__right .product__list__item-info-price-new {
+  margin: 0;
+  font-weight: 700;
+  padding-right: 14px;
+}
+body .app__container .app__main__right .product__list__item-info-price-old {
+  margin: 0;
+  text-decoration: line-through;
+  color: #999;
+}
+body .app__container .app__main__right .product__list__item-info-button {
+  text-decoration: none;
+  background-color: #42659d;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 7px 15px;
+}
+body .app__container .app__main__right .product__list__item-info-button:hover {
+  background-color: rgba(66, 101, 157, 0.6);
+}
+body .app__container .app__footer {
+  padding-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .app__container .app__footer-content {
+  width: 25%;
+}
+@media only screen and (max-width: 810px) {
+  body .app__container .app__footer-content {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .app__container .app__footer-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+body .app__container .app__footer-content__title {
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+body .app__container .app__footer-content__text {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+body .app__container .app__footer-content-img {
+  padding-bottom: 20px;
+  height: 35px;
+}
+
+/*# sourceMappingURL=list_product.css.map */
