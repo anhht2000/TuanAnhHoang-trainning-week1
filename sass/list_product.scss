@@ -170,17 +170,20 @@ body {
       display: flex;
       padding-top: 45px;
       flex-wrap: wrap;
-
+      @include Responsive(SM) {
+        padding: 0 19px;
+        padding-top: 45px;
+      }
       &__left {
         width: 25%;
         @include Responsive(SM) {
           width: 100%;
           display: flex;
-          justify-content: space-between;
+          flex-wrap: wrap;
         }
-        @include Responsive(XS) {
-          display: none;
-        }
+        // @include Responsive(XS) {
+        //   display: none;
+        // }
         &-link {
           text-decoration: none;
           background-color: #42659d;
@@ -197,21 +200,27 @@ body {
           margin: 0;
           padding: 0;
           list-style: none;
+          @include Responsive(SM) {
+            text-align: start;
+            padding-top: 0;
+            width: 50%;
+          }
           &:nth-of-type(2),
           &:nth-of-type(3) {
             padding-top: 15px;
             @include Responsive(SM) {
               padding-top: 0;
+              width: 50%;
             }
-          }
-          @include Responsive(SM) {
-            text-align: start;
           }
           &__title {
             margin: 0;
             padding-bottom: 10px;
             padding-left: 10px;
             font-size: 17px;
+            @include Responsive(SM) {
+              padding-left: 0;
+            }
           }
           &__item {
             color: #666;
